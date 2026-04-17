@@ -1,0 +1,25 @@
+{
+  "_comment": "Example: USA (country 366) aviation ELT(DT) beacon with ICAO address and ELT(DT) rotating field.",
+  "country": 366,
+  "tac": 512,
+  "serial": 4321,
+  "beacon_type": "ELT_DT",
+  "homing": 1,
+  "rls_function": 0,
+  "test": 0,
+  "lat": 38.8977,
+  "lon": -77.0365,
+  "vessel_id_type": "ICAO",
+  "vessel_id_params": {
+    "icao": 11259375,
+    "operator_code": "UAL"
+  },
+  "rotating": "ELT_DT",
+  "rotating_params": {
+    "time_of_last_loc_s": 60,
+    "altitude_m": 10000,
+    "triggering_event": 1,
+    "gnss_status": 0,
+    "battery_code": 3
+  }
+}

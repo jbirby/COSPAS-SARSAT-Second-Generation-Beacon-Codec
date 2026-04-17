@@ -1,0 +1,40 @@
+{
+  "source": "C/S T.018 Rev 7, Appendix B.1",
+  "description": "Canonical BCH(250,202) test vector. Main field inputs yield the listed hex-encoded 202-bit pattern; dividing by the generator polynomial (with 48 trailing zero bits appended) produces the listed 48-bit binary parity.",
+  "main_field_inputs": {
+    "tac_number": 230,
+    "serial_number": 573,
+    "country_code": 201,
+    "status_of_homing_device": 1,
+    "rls_function": 0,
+    "test_protocol": 0,
+    "encoded_lat_deg": 48.79315,
+    "encoded_lon_deg": 69.00876,
+    "encoded_lat_bits": "0 0110000 110010110000110",
+    "encoded_lon_bits": "0 01000101 000000100011111",
+    "vessel_id_type": 0,
+    "vessel_id_bits": "00000000000000000000000000000000000000000000",
+    "beacon_type": 0,
+    "spare_bits": "11111111111111"
+  },
+  "rotating_field_0_inputs": {
+    "identifier": 0,
+    "elapsed_time_since_activation_hours": 1,
+    "time_from_last_location_minutes": 6.4,
+    "altitude_m": 430.24,
+    "hdop_code": 0,
+    "vdop_code": 1,
+    "activation_notification": 0,
+    "remaining_battery_code": 5,
+    "gnss_status": 2,
+    "spare": "00"
+  },
+  "main_bits_length": 202,
+  "main_bits_hex": "00E608F4C986196188A047C000000000000FFFC0100C1A00960",
+  "ground_segment_representation_hex": "0039823D32618658622811F0000000000003FFF004030680258",
+  "ground_segment_note": "Two leading zero bits + 202 message bits = 204 bits; used for BCH divisor alignment with the BCH(255,207) parent code.",
+  "expected_bch_parity_length": 48,
+  "expected_bch_parity_bin": "010010010010101001001111110001010111101001001001",
+  "expected_23hex_id": "9934039823D000000000000",
+  "expected_15hex_id": "9934039823D0000"
+}

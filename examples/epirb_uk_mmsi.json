@@ -1,0 +1,24 @@
+{
+  "_comment": "Example: UK (country 232) maritime EPIRB with MMSI vessel ID, RLS function enabled.",
+  "country": 232,
+  "tac": 128,
+  "serial": 512,
+  "beacon_type": "EPIRB",
+  "homing": 1,
+  "rls_function": 1,
+  "test": 0,
+  "lat": 51.5074,
+  "lon": -0.1278,
+  "vessel_id_type": "MMSI",
+  "vessel_id_params": {
+    "mmsi": 232123456
+  },
+  "rotating": "RLS",
+  "rotating_params": {
+    "capability_auto": true,
+    "capability_manual": true,
+    "provider": 1,
+    "feedback_type1_received": false,
+    "feedback_type2_received": false
+  }
+}

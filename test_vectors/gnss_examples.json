@@ -1,0 +1,33 @@
+{
+  "source": "C/S T.018 Rev 7, Appendix C (GNSS Encoded Location Protocol)",
+  "description": "Reference GNSS encodings. Bit strings are MSB-first. Position is bits 44-90 of the 202-bit main field; degrees and sign flags are integer, decimal fractions use 15-bit weighted encoding.",
+  "bit_layout": {
+    "lat_sign_bit": 44,
+    "lat_degrees_bits": "45-51 (7 bits, 0..90)",
+    "lat_decimal_bits": "52-66 (15 bits, weighted)",
+    "lon_sign_bit": 67,
+    "lon_degrees_bits": "68-75 (8 bits, 0..180)",
+    "lon_decimal_bits": "76-90 (15 bits, weighted)",
+    "encoding_method": "Integral Number Conversion Method, Appendix C.5",
+    "resolution_m_at_equator": 3.39152
+  },
+  "defaults_no_fix": {
+    "lat_bits": "1 1111111 000001111100000",
+    "lon_bits": "1 11111111 111110000011111"
+  },
+  "examples": [
+    {
+      "description": "Appendix B.1 canonical example: 48.79315N, 69.00876E",
+      "lat_deg": 48.79315,
+      "lon_deg": 69.00876,
+      "expected_lat_bits": "0 0110000 110010110000110",
+      "expected_lon_bits": "0 01000101 000000100011111"
+    },
+    {
+      "description": "Appendix C example: 35 46.295' N => 35.77158 degrees => fractional 0.77158 * 32768 = 25283.13 => 25283",
+      "lat_deg": 35.77158,
+      "expected_lat_decimal_n": 25283,
+      "expected_lat_decimal_bits": "110001011000011"
+    }
+  ]
+}

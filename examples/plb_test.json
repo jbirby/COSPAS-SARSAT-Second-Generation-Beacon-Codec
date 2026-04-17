@@ -1,0 +1,14 @@
+{
+  "_comment": "Example: PLB self-test beacon (test protocol flag = 1). Uses no-fix default location and G.008 rotating field.",
+  "country": 366,
+  "tac": 1,
+  "serial": 1,
+  "beacon_type": "PLB",
+  "homing": 0,
+  "rls_function": 0,
+  "test": 1,
+  "lat": null,
+  "lon": null,
+  "vessel_id_type": "NONE",
+  "rotating": "G008"
+}

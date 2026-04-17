@@ -1,0 +1,29 @@
+{
+  "source": "C/S T.018 Rev 7, Section 2.2.3, Table 2.2, Appendix D",
+  "description": "23-bit LFSR PRN generator with G(x) = X^23 + X^18 + 1. Feedback = reg[0] XOR reg[18] into reg[22]; output taken from reg[0]. Period = 2^23 - 1 = 8388607 chips.",
+  "lfsr_polynomial": "X^23 + X^18 + 1",
+  "lfsr_taps": [18, 0],
+  "register_width": 23,
+  "period_chips": 8388607,
+  "segment_length_chips": 38400,
+  "chips_per_bit_per_channel": 256,
+  "initialization": {
+    "normal_i": {
+      "bits": "00000000000000000000001",
+      "first_64_chips_hex_clean": "80000108421284A1"
+    },
+    "normal_q": {
+      "bits": "00110101100000111111100",
+      "first_64_chips_hex_clean": "3F8358BAD030F231"
+    },
+    "self_test_i": {
+      "bits": "10100101100100111110000",
+      "first_64_chips_hex_clean": "0F934A4D4CF3028D"
+    },
+    "self_test_q": {
+      "bits": "01111001110100100101000",
+      "first_64_chips_hex_clean": "14973DC716CDE124"
+    }
+  },
+  "note": "The first_64_chips_hex_clean strings encode 64 chip outputs, most-significant-bit-first within each hex nibble, leftmost nibble first."
+}
