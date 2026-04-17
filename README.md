@@ -4,7 +4,7 @@ A Python codec for **COSPAS-SARSAT Second-Generation Beacons (SGB)**, the modern
 
 This library implements the full protocol stack end-to-end: message construction, BCH(250,202) encoding and decoding, PRN spreading, DSSS-OQPSK modulation and demodulation, and WAV file round-trips. It is also distributed as a Claude skill (`sgb-codec.skill`) that can be imported into Cowork or Claude Code.
 
-Distinct from [cospas-sarsat](../cospas-sarsat/), which handles the legacy 112/144-bit BPSK beacons. The two systems share a name and a radio band but have completely different message formats, modulation, and error-correction schemes.
+Distinct from ([../cospas-sarsat/](https://github.com/jbirby/COSPAS-SARSAT-406-MHz-Beacon-Codec)), which handles the legacy 112/144-bit BPSK beacons. The two systems share a name and a radio band but have completely different message formats, modulation, and error-correction schemes.
 
 ## Quick start
 
@@ -194,7 +194,7 @@ The bundled `examples/plb_test.json` is a good template for a "junk" beacon.
 - IEEE 802.15.4-2015 § 12.2.6 — half-sine pulse shaping reference.
 - ICAO Doc 8585 — airline operator codes.
 - ITU-R M.585 — Maritime Identification Digit (MID) assignments.
-- Parent project: [cospas-sarsat](../cospas-sarsat/) — legacy 406 MHz beacon codec for first-generation hardware.
+- Parent project: [[cospas-sarsat](../cospas-sarsat/)](https://github.com/jbirby/COSPAS-SARSAT-406-MHz-Beacon-Codec). — legacy 406 MHz beacon codec for first-generation hardware.
 
 ## Disclaimer
 
