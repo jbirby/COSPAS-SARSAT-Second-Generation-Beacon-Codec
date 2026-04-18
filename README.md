@@ -198,7 +198,7 @@ The bundled `examples/plb_test.json` is a good template for a "junk" beacon.
 
 ## Disclaimer
 
-This codec is provided for research, education, test-signal generation, and receiver-development use. Never encode beacons with real-world beacon identifiers (registered TACs, real MMSIs, assigned ICAO addresses, actual aircraft tails) unless you are authorized to do so. Never transmit the generated signals on 406 MHz.
+This codec is provided for research, education, test-signal generation, and receiver-development use. Never transmit the generated signals on 406 MHz.
 
 ## License
 
